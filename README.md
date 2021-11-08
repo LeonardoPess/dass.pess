@@ -27,3 +27,24 @@
 </p>
 
 <p align="center">Um projeto onde eu realmente busquei a perfeição na interface e acessibilidade! Ultilizando também um pouco de conhecimento em PHP e MYSQL com a estrutura MVC, mesmo não tendo estudado PHP tão a fundo fiquei contente com o resultado e pelo fato de não ter encontrado tantas dificuldades no desenvolvimento me mostrou que minha base está bem bacana e agora posso continuar a estudar nextJS XD</p>
+
+<h1 align="center">
+  <a>
+    Getting started
+  </a>
+</h1>
+
+<p align="center">1 - Adicione o dass_pess.sql ao banco de dados</p>
+<p align="center">2 - Configure o banco de dados no config.php</p>
+<p align="center">3 - Se você utilizar yarn</p>
+```
+yarn
+yarn dev
+```
+
+<p align="center">3 - Se você utilizar npm</p>
+
+```
+npm install
+npm run dev
+```
