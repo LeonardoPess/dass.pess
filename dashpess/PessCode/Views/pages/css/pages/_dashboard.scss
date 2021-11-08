@@ -1,0 +1,17 @@
+.dashboard {
+  height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  & > div {
+    width: 100%;
+    max-width: 1480px;
+    max-height: 80vh;
+
+    display: flex;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+  }
+}

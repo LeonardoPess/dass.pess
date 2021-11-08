@@ -1,0 +1,58 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+
+  > div {
+    width: 100% ;
+    max-width: 360px;
+
+    h1 {
+      margin-bottom: 3rem;
+
+      text-align: center;
+    }
+
+    form {
+      width: 100%;
+      max-width: 360px;
+
+      padding: 2rem 2rem 2rem;
+      display: flex;
+      flex-direction: column;
+
+      background: var(--gray-800);
+      border-radius: 8px;
+
+      & > label,
+      .inputWrapper > label {
+        display: block;
+        padding-bottom: .7rem;
+      }
+
+      & > input,
+      .inputWrapper input {
+        margin-bottom: 1rem;
+
+        &.button {
+          width: 100%;
+
+          font-size: 1.2rem;
+        }
+      }
+
+      & > .checkboxWrapper {
+        display: flex;
+
+        & > label:nth-child(2) {
+          padding-left: 1rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

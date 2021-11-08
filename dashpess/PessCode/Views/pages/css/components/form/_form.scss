@@ -1,0 +1,73 @@
+.form {
+  width: 100%;
+  max-height: 80vh;
+
+  flex: 1;
+  padding: 2rem;
+
+  border-radius: 8px;
+  background: var(--gray-800);
+  overflow-y: auto;
+
+  .title {
+    margin-left: 1rem;
+  }
+
+  .separator {
+    margin: 1rem 1rem;
+  }
+
+  .feedbackBox {
+    margin-left: 1rem;
+  }
+
+  .inputWrapper {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    & > div {
+      min-width: 400px;
+
+      flex: 1;
+      margin: 1rem;
+
+      @media(max-width: 768px) {
+        & {
+          min-width: 200px;
+        }
+      }
+
+      &.lg {
+        min-width: calc(100% - 2rem);
+      }
+
+      @media(max-width: 768px) {
+        & {
+          min-width: fit-content;
+        }
+      }
+
+      label {
+        padding-bottom: .7rem;
+        display: block;
+      }
+
+      input, select, textarea {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .buttonWrapper {
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+
+    & > * {
+      margin-right: 1rem;
+    }
+  }
+}

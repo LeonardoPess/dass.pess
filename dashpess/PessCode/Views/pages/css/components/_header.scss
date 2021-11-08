@@ -1,0 +1,118 @@
+.header {
+  width: 100%;
+  max-width: 1480px;
+  height: 4rem;
+
+  margin: 1rem auto 0;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+
+  @media(max-width: 530px) {
+    .logo {
+      display: none;
+    }
+  }
+
+  & > .menu {
+    display: none;
+    margin-right: 1rem;
+
+    cursor: pointer;
+
+    @media(max-width: 768px) {
+      & {
+        display: block;
+      }
+    }
+
+    & > img {
+      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(131deg) brightness(101%) contrast(101%);
+    }
+  }
+
+  & > div {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    & > div {
+      margin-right: 2rem;
+      filter: invert(69%) sepia(1%) saturate(5300%) hue-rotate(199deg) brightness(91%) contrast(75%);
+      transition: filter 0.2s;
+
+      &:hover {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(131deg) brightness(101%) contrast(101%);
+      }
+
+      @media(max-width: 400px) {
+        & {
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    & > a {
+      display: flex;
+      align-items: center;
+      padding-left: 2rem;
+
+      border-left: 1px solid var(--gray-700);
+      transition: filter 0.2s;
+
+      &:hover {
+        filter: brightness(.8);
+      }
+
+      @media(max-width: 400px) {
+        & {
+          padding-left: 1rem;
+        }
+      }
+
+      & > div:nth-child(1) {
+        margin-right: 1rem;
+
+        text-align: right;
+
+        p {
+          max-width: 150px;
+
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+
+          @media(max-width: 550px) {
+            & {
+                max-width: 100px;
+            }
+          }
+        }
+
+        span {
+          color: var(--gray-300);
+          font-size: .8rem;
+        }
+      }
+
+      & > div:nth-child(2) {
+        width: 48px;
+        height: 48px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        overflow: hidden;
+        border-radius: 100%;
+
+        @media(max-width: 400px) {
+          & {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+}

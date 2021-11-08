@@ -1,0 +1,132 @@
+main.users {
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: auto;
+
+  padding: 2rem;
+
+  background: var(--gray-800);
+  border-radius: 8px;
+
+  & > * {
+    min-width: 770px;
+    padding-right: 2rem;
+  }
+
+  & > div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .button {
+      padding: .6rem;
+      font-size: .9rem;
+
+      img {
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(102deg) brightness(104%) contrast(101%);
+      }
+    }
+  }
+
+  table {
+    width: 100%;
+
+    margin-top: 2rem;
+
+    .textLimited {
+      max-width: 250px;
+
+      @media(max-width: 1280px) {
+        & {
+          max-width: 150px;
+        }
+      }
+    }
+
+    thead {
+      th {
+        padding: 1rem;
+
+        color: var(--gray-600);
+        font-size: .8rem;
+        text-align: left;
+        position: relative;
+
+        &::after {
+          content: '';
+          width: calc(100% + 2px);
+          height: 1px;
+        
+          display: inline-block;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        
+          background: var(--gray-700);
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          padding: 1rem;
+          position: relative;
+
+          &::after {
+            content: '';
+            width: calc(100% + 2px);
+            height: 1px;
+          
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+          
+            background: var(--gray-700);
+          }
+
+          & > div {
+            a {
+              font-weight: bold;
+              color: var(--purple-400);
+              transition: all 0.2s;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+
+            p {
+              font-size: .9rem;
+              color: var(--gray-300);
+            }
+          }
+
+          .edit,
+          .delete {
+            max-width: 110px;
+
+            margin-left: auto;
+            padding: .6rem;
+            font-size: .9rem;
+            transition: all .2s;
+
+            img {
+              width: 16.3px;
+              height: 16px;
+              margin-right: .5rem;
+
+              filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(102deg) brightness(104%) contrast(101%);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .pagination {
+    text-align: right;
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,147 @@
+.aside {
+  width: 200px;
+  max-height: 80vh;
+
+  padding-bottom: 2rem;
+  padding-left: .4rem;
+  margin-right: 2rem;
+
+  overflow-y: auto;
+
+  @media(max-width: 768px) {
+    & {
+      display: none;
+    }
+  }
+
+  & > div {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    & + div {
+      margin-top: 2rem;
+    }
+
+    h1 {
+      font-weight: bold;
+      color: var(--gray-400);
+      font-size: .8rem;
+    }
+
+    & > div {
+      margin-top: 1.5rem;
+      display: flex;
+      align-items: stretch;
+      flex-direction: column;
+
+      a {
+        display: flex;
+        align-items: center;
+        padding: .5rem 0;
+
+        color: var(--white);
+        text-decoration: none;
+        font-weight: 500;
+        border-radius: 8px;
+        outline: none;
+        transition: filter 0.2s;
+
+        &.selected {
+          color: var(--pink-500);
+          filter: invert(42%) sepia(88%) saturate(3042%) hue-rotate(305deg) brightness(87%) contrast(90%);
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        &:focus {
+          outline: 6px solid var(--blue);
+        }
+
+        img {
+          width: 20px;
+          height: 20px;
+
+          margin-right: .5rem;
+
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(102deg) brightness(104%) contrast(101%);
+        }
+      }
+    }
+  }
+}
+
+.asideOverflow {
+  width: 100vw;
+  height: 100vh;
+
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  background: transparent;
+  transition: background-color ease .3s;
+
+  @media(max-width: 768px) {
+    & {
+      display: block;
+    }
+  }
+
+  &.actived {
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.48);
+
+    & > .asideMobile {
+      left: 0%;
+    }
+  }
+
+  & > .asideMobile {
+    width: 320px;
+    height: 100vh;
+    max-height: fit-content;
+
+    padding: 3rem 2rem;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -100%;
+
+    transition: left ease 0.3s;
+    background: var(--gray-900);
+
+    @media(max-width: 768px) {
+      & {
+        display: block;
+      }
+    }
+
+    & > strong {
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      & > h1 {
+        font-size: 1.5rem;
+      }
+  
+      & > button {
+        transition: filter 0.2s;
+
+        img {
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(102deg) brightness(104%) contrast(101%);
+        }
+  
+        &:hover {
+          background: var(--gray-900);
+        }
+      }
+    }
+  }
+}

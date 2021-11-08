@@ -1,0 +1,43 @@
+.button {
+  width: auto;
+
+  padding: .8rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--pink-500);
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: outline .2s, filter .2s;
+
+  &:focus {
+    outline: 6px solid var(--blue);
+  }
+
+  &:hover {
+    filter: brightness(.8);
+  }
+
+  &.cancel {
+    background: var(--gray-600);
+  }
+
+  &.edit {
+    background: var(--purple-500);
+  }
+
+  &.delete {
+    background: var(--purple-500);
+  }
+
+  &.menu {
+    padding: .6rem .8rem;
+
+    background: transparent;
+  }
+}

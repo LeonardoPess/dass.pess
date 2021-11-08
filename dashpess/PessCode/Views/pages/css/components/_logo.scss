@@ -1,0 +1,23 @@
+.logo {
+  letter-spacing: tight;
+  font-size: 2rem;
+  font-weight: bold;
+
+  span {
+    color: var(--pink-500);
+  }
+}
+
+a.logo {
+  outline: none;
+  border-radius: 8px;
+  transition: outline 0.2s;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    outline: 6px solid var(--blue);
+  }
+}
