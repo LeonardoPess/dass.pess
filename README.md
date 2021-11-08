@@ -50,7 +50,7 @@ npm install
 npm run devDashboard
 ```
 
-<p align="center">4 - Ultilize o Live Sass Compiler e adicione ao seu settings</p>
+<p align="center">4 - Ultilize o Live Sass Compiler e adicione ao seu settings do vscode</p>
 
 ```
     "liveSassCompile.settings.formats": [
