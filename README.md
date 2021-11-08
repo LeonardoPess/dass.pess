@@ -40,12 +40,43 @@
 
 ```
 yarn
-yarn dev
+yarn devDashboard
 ```
 
 <p align="center">3 - Se você utilizar npm</p>
 
 ```
 npm install
-npm run dev
+npm run devDashboard
+```
+
+<p align="center">4 - Ultilize o Live Sass Compiler e adicione ao seu settings</p>
+
+```
+    "liveSassCompile.settings.formats": [
+      {
+         "format": "expanded",
+         "extensionName": ".css",
+         "savePath": "/PessCode/Views/pages/css/dist"
+      }
+   ],
+   "liveSassCompile.settings.generateMap": false,
+```
+
+<h1 align="center">
+  <a>
+    Building
+  </a>
+</h1>
+
+<p align="center">Se você utilizar yarn</p>
+
+```
+yarn buildDashboard
+```
+
+<p align="center">Se você utilizar npm</p>
+
+```
+npm run buildDashboard
 ```
