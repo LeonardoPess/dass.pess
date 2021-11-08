@@ -4,7 +4,7 @@
   </a>
 </h1>
 
-<p align="center"><b>Dash.pess</b> foi desenvolvido com HTML, SASS, JAVASCRIPT e PHP, um dashboard com o princípio de fazer edições em sites, ter uma interface moderna e acessível! Muito fácil de fazer adaptações, edições e adições de novas features.</p>
+<p align="center"><b>Dash.pess</b> foi desenvolvido com HTML, SASS, JAVASCRIPT e PHP e MYSQL, um dashboard com o princípio de fazer edições em sites, ter uma interface moderna e acessível! Muito fácil de fazer adaptações, edições e adições de novas features.</p>
 
 <p align="center">
    <a href="https://www.linkedin.com/in/leonardo-pessoa-5733121b5/">
