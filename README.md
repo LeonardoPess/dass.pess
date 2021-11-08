@@ -37,6 +37,7 @@
 <p align="center">1 - Adicione o dass_pess.sql ao banco de dados</p>
 <p align="center">2 - Configure o banco de dados no config.php</p>
 <p align="center">3 - Se você utilizar yarn</p>
+
 ```
 yarn
 yarn dev
