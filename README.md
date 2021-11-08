@@ -26,7 +26,7 @@
   <img src="dashpess.png">
 </p>
 
-<p align="center">Um projeto onde eu realmente busquei a perfeição na interface e acessibilidade! Ultilizando também um pouco de conhecimento em PHP e MYSQL com a estrutura MVC, mesmo não tendo estudado PHP tão a fundo fiquei contente com o resultado e pelo fato de não ter encontrado tantas dificuldades no desenvolvimento me mostrou que minha base está bem bacana e agora posso continuar a estudar nextJS XD</p>
+<p align="center">Um projeto onde eu realmente busquei a perfeição na interface e acessibilidade! Ultilizando também um pouco de conhecimento em PHP e MYSQL com a estrutura MVC, mesmo não tendo estudado PHP tão a fundo fiquei contente com o resultado e pelo fato de não ter encontrado tantas dificuldades no desenvolvimento frontend me mostrou que minha base está bem bacana e agora posso continuar a estudar nextJS XD</p>
 
 <h1 align="center">
   <a>
