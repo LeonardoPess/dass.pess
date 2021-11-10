@@ -20,14 +20,19 @@
 
           if ($user->loginExists($login)) {
             $data = $user->fetchUser($login);
-            $_SESSION['id'] = $data['id'];
-            $_SESSION['login'] = $login;
-            $_SESSION['password'] = $password;
-            $_SESSION['name'] = $data['name'];
-            $_SESSION['role'] = $data['role'];
-            $_SESSION['img'] = $data['image'];
-            \PessCode\Utils::redirect(INCLUDE_PATH_PANEL);
-            die();
+            $passwordDB = $data['password'];
+
+            if ($password === $passwordDB) {
+              $data = $user->fetchUser($login);
+              $_SESSION['id'] = $data['id'];
+              $_SESSION['login'] = $login;
+              $_SESSION['password'] = $password;
+              $_SESSION['name'] = $data['name'];
+              $_SESSION['role'] = $data['role'];
+              $_SESSION['img'] = $data['image'];
+              \PessCode\Utils::redirect(INCLUDE_PATH_PANEL);
+              die();
+            }
           }
         }
 
